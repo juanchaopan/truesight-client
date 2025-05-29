@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.toolbar {
+    @apply w-auto h-10;
+    @apply border-1 border-gray-200 border-solid rounded-lg shadow-lg;
+    @apply p-2 bg-white;
+    @apply flex flex-row items-center gap-2;
+}
+
+.toolbar-logo {
+    @apply w-auto h-full;
+}
+
+.toolbar-subscription {
+    @apply w-auto h-full;
+    @apply flex flex-col items-start justify-center;
+}
+
+.toolbar-subscription-product {
+    @apply text-gray-700 text-sm font-mono font-semibold tracking-wide;
+}
+
+.toolbar-subscription-status-paid {
+    @apply text-emerald-500 text-[9px] font-mono font-semibold;
+}
+
+.toolbar-subscription-status-upgrade {
+    @apply rounded-sm;
+    @apply bg-red-600;
+    @apply text-white text-[9px] font-mono font-semibold px-[4px];
+}
